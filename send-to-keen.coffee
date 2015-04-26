@@ -40,7 +40,6 @@ extractData = (line) ->
 
 keenSend = (collection, event) ->
   console.log "Send to keen", collection, event
-  return ## TODO temporary disable
   keenClient.addEvent collection, event, (err, res) ->
     if err
       console.log "Keen error:  " + err
