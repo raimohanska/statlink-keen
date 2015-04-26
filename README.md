@@ -26,4 +26,4 @@ module.exports = {
 
 Schedule the `statlink-keen` script to be run hourly in your `etc/crontab` file:
 
-    0  *    * * *   root    python /home/pi/statlink-keen/statlink-keen
+    0  *    * * *   root    /home/pi/statlink-keen# cd /home/pi/statlink-keen && ./statlink-keen
