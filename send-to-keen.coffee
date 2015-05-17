@@ -84,6 +84,6 @@ files.forEach (file) ->
   locations = R.keys(valuesByLocation)
   locations.forEach (key) ->
     values = valuesByLocation[key]
-    mean = (R.sum(R.pluck("value")(values)) / values.length).toFixed(2)
+    mean = parseFloat((R.sum(R.pluck("value")(values)) / values.length).toFixed(2))
     report({location: values[0].location, value: mean, type: values[0].type})
 
